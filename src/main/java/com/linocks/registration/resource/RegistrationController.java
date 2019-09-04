@@ -23,15 +23,8 @@ public class RegistrationController {
     NotificationService notificationService;
 
 
+
     @GetMapping("/")
-    public String loadHomePage(Model model){
-        model.addAttribute("users", userService.getAllUsers());
-
-        return "home";
-    }
-
-
-    @GetMapping("/registration")
     public String loadRegistrationPage(Model model){
         model.addAttribute("user",new Users());
         model.addAttribute("users", userService.getAllUsers());
@@ -40,7 +33,7 @@ public class RegistrationController {
     }
 
 
-    @PostMapping("/registration")
+    @PostMapping("/")
     public String saveRegistrationDetails(@Valid Users user, BindingResult bindingResult, RedirectAttributes redirectAttrib){
 
         if(bindingResult.hasErrors()){
@@ -52,6 +45,6 @@ public class RegistrationController {
 
         redirectAttrib.addFlashAttribute("success",true);
 
-        return "redirect:/registration";
+        return "redirect:/";
     }
 }
