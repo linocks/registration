@@ -1,5 +1,4 @@
-## Spring Boot, Thymeleaf registration Application
-Spring Boot registration app with registration email notification
+##Spring Boot registration app with registration email notification
 ---
 
 This app demonstrates how to send __registration__ confirmation emails 
