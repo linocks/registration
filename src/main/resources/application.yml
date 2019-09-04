@@ -1,4 +1,4 @@
-# Java Mail
+# Java Mail Configuration
 spring:
   mail:
     protocol: smtp
