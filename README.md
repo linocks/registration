@@ -3,3 +3,5 @@ Spring Boot registration app with registration email notification
 
 This app demostrates how to send __registration__ confirmation emails 
 after a successful registration
+
+Replace the __username__ and __password__ for the email configuration in the properties file with your username and password.
