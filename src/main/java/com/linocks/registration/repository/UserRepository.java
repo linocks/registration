@@ -1,7 +1,9 @@
 package com.linocks.registration.repository;
 
-import com.linocks.registration.model.User;
+import com.linocks.registration.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<User,Integer> {
+@Repository
+public interface UserRepository extends JpaRepository<Users,Integer> {
 }
